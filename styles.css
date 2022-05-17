@@ -85,7 +85,32 @@ font-family: 'Permanent Marker', cursive;
     color:goldenrod;
     font-size: 10rem;
     font-family: 'Butcherman', cursive;
-font-family: 'Courgette', cursive;
-font-family: 'Monoton', cursive;
-font-family: 'Permanent Marker', cursive;  
+    font-family: 'Courgette', cursive;
+    font-family: 'Monoton', cursive;
+    font-family: 'Permanent Marker', cursive;  
 }
+
+
+#reviews{
+    background-color: black;
+}
+
+.rev-text{
+    font-size:1.5rem;
+}
+   
+.testimonial-inner .rev-desc{
+border-radius: 5px;
+padding: 40px
+}
+    
+        
+ .link-name{
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+}       
+
+.testimonial-inner img.tm-people{
+    height: 20rem;
+   -webkit-border-radius: 50%;
+   }  
