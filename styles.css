@@ -1,0 +1,91 @@
+.sched-btn{
+    background-color: goldenrod;
+    width: 10rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.svc-sec{
+    background-color: black;
+}
+
+.svc-hdr{
+    padding-top: 3rem;
+
+}
+
+.my-svc{
+    text-align: center;
+    color:goldenrod;
+    font-size: 10rem;
+    font-family: 'Butcherman', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Permanent Marker', cursive;
+  
+}
+
+.my-svc2{
+    text-align: center;
+    color:goldenrod;
+    font-size: 5rem;
+  
+}
+
+   
+   
+   
+
+.card-title{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.card-text{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.svc-btn{
+    background-color: goldenrod;
+    font-size: 1.2rem;
+    font-weight: bold;
+ }
+   
+ .svc-link{
+  display: flex;
+    justify-content: center;
+   }
+
+
+   .card-img-top{
+   border: solid goldenrod;
+   }
+   .card-body{
+       border: solid goldenrod;
+   }
+
+.thumbnails{
+    max-width: 100%;
+}
+
+.gallery{
+    background-color: black;
+    padding: 3rem;
+}
+
+.gallery img{
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+}
+
+.gall-hdr{
+    text-align: center;
+    color:goldenrod;
+    font-size: 10rem;
+    font-family: 'Butcherman', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Permanent Marker', cursive;  
+}
