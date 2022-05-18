@@ -135,3 +135,42 @@ footer {
 footer a{
     color: #FFFFFF80
 }
+
+#offer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    Padding-top: 10rem;
+}
+
+.offer-text{
+    color: goldenrod;
+    font-size: 3rem;
+}
+
+.offer-label{
+    color: white;
+}
+
+.my-form{
+    border: goldenrod solid 5rem;
+    padding: 1rem;
+}
+
+.form-btn{
+    display: flex;
+ justify-content: center;
+
+
+}
+
+.form-email{
+    font-size:1.4rem;
+}
+
+.my-form-btn{
+    background-color: red;
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    font-weight: bolder;
+}
