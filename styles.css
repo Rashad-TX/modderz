@@ -127,14 +127,7 @@ padding: 1.3rem;
    -webkit-border-radius: 50%;
    }  
 
-footer {
-    background-color: #343A40;
-    color: #FFFFFF80
-}
 
-footer a{
-    color: #FFFFFF80
-}
 
 #offer{
     background-color: black;
@@ -174,3 +167,25 @@ footer a{
     padding: 0.2rem;
     font-weight: bolder;
 }
+
+#contact{
+    background-color: black;
+    padding-top: 5rem;
+}
+
+.contact-hdr{
+    color: goldenrod;
+    text-align: center;
+}
+
+footer {
+    background-color: #343A40;
+    color: #FFFFFF80
+}
+
+footer a{
+    color: #FFFFFF80;
+    font-size: 1.5 rem;
+}
+
+
