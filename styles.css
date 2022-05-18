@@ -30,9 +30,21 @@ font-family: 'Permanent Marker', cursive;
     color:goldenrod;
     font-size: 5rem;
   
+  
 }
 
+.my-icons{
+    padding-top: 5rem;
+}
+.icons { 
+    font-size: 8rem !important; 
+    color:goldenrod
    
+}
+
+.svc-item{
+    color: goldenrod;
+}
    
    
 
@@ -101,7 +113,7 @@ font-family: 'Permanent Marker', cursive;
    
 .testimonial-inner .rev-desc{
 border-radius: 5px;
-padding: 40px
+padding: 1.3rem;
 }
     
         
@@ -114,3 +126,12 @@ padding: 40px
     height: 20rem;
    -webkit-border-radius: 50%;
    }  
+
+footer {
+    background-color: #343A40;
+    color: #FFFFFF80
+}
+
+footer a{
+    color: #FFFFFF80
+}
