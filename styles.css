@@ -1,7 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-text{
+    font-size: 1.1rem;
+}
 .sched-btn{
     background-color: goldenrod;
-    width: 10rem;
-    font-size: 1.2rem;
+    width: 6rem;
+    font-size: 0.5rem;
     font-weight: bolder;
 }
 
@@ -17,7 +25,7 @@
 .my-svc{
     text-align: center;
     color:goldenrod;
-    font-size: 10rem;
+    font-size: 4rem;
     font-family: 'Butcherman', cursive;
 font-family: 'Courgette', cursive;
 font-family: 'Monoton', cursive;
@@ -34,16 +42,18 @@ font-family: 'Permanent Marker', cursive;
 }
 
 .my-icons{
-    padding-top: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .icons { 
-    font-size: 8rem !important; 
+    font-size: 2.5rem !important; 
     color:goldenrod
    
 }
 
 .svc-item{
     color: goldenrod;
+    font-size: 1rem;
 }
    
    
@@ -95,7 +105,7 @@ font-family: 'Permanent Marker', cursive;
 .gall-hdr{
     text-align: center;
     color:goldenrod;
-    font-size: 10rem;
+    font-size: 6rem;
     font-family: 'Butcherman', cursive;
     font-family: 'Courgette', cursive;
     font-family: 'Monoton', cursive;
@@ -106,9 +116,13 @@ font-family: 'Permanent Marker', cursive;
 #reviews{
     background-color: black;
 }
+.rev-item{
+    width: 10rem;
+    padding-top:2rem;
+}
 
 .rev-text{
-    font-size:1.5rem;
+    font-size:1rem;
 }
    
 .testimonial-inner .rev-desc{
@@ -119,12 +133,16 @@ padding: 1.3rem;
         
  .link-name{
     font-family: "Montserrat", Sans-serif;
-    font-size: 14px;
+    font-size: 0.6rem;
 }       
 
+.link-position{
+    font-size:0.5rem;
+}
+
 .testimonial-inner img.tm-people{
-    height: 20rem;
-   -webkit-border-radius: 50%;
+    height: 5rem;
+  border-radius: 50%;;
    }  
 
 
@@ -133,12 +151,12 @@ padding: 1.3rem;
     background-color: black;
     display: flex;
     justify-content: center;
-    Padding-top: 10rem;
+    Padding-top: 6rem;
 }
 
 .offer-text{
     color: goldenrod;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .offer-label{
@@ -146,7 +164,7 @@ padding: 1.3rem;
 }
 
 .my-form{
-    border: goldenrod solid 5rem;
+    border: goldenrod solid 1rem;
     padding: 1rem;
 }
 
@@ -163,9 +181,11 @@ padding: 1.3rem;
 
 .my-form-btn{
     background-color: red;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 0.2rem;
     font-weight: bolder;
+    color: white;
+    border: solid 0.1rem white;
 }
 
 #contact{
@@ -189,3 +209,19 @@ footer a{
 }
 
 
+.mdl-btn{
+    background-color: goldenrod;
+}
+
+.sched-btn, .svc-btn{
+cursor: pointer;    
+}
+
+@media (max-width: 800px){
+    .gall-hdr{
+        font-size: 3rem;
+    }
+    .my-svc{
+        font-size: 3rem;
+    }
+}

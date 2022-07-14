@@ -18,23 +18,64 @@
 <body>
       <!--Start Of Navbar-->
     <nav id="home" class="navbar navbar-expand-lg navbar-dark bg-dark" >
-        <a class="navbar-brand" href="#"><img src="images/nlogo.png" width="125rem"></a>
+        <a class="navbar-brand" href="#"><img src="images/nlogo.png" width="60rem"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav mx-auto">
-            <a class="nav-item nav-link " href="#home"><h3>Home</h3> </a>
-            <a class="nav-item nav-link" href="#services"><h3>Services</h3></a>
-            <a class="nav-item nav-link" href="#gallery"><h3>Gallery</h3></a>
-            <a class="nav-item nav-link" href="#reviews"><h3>Reviews</h3></a>
-            <a class="nav-item nav-link" href="#offer"><h3>Offers</h3></a>
-            <a class="nav-item nav-link" href="#contact"><h3>Contact Us</h3></a>
+            <a class="nav-item nav-link " href="#home"><h3 class="nav-text">Home</h3> </a>
+            <a class="nav-item nav-link" href="#services"><h3 class="nav-text">Services</h3></a>
+            <a class="nav-item nav-link" href="#gallery"><h3 class="nav-text">Gallery</h3></a>
+            <a class="nav-item nav-link" href="#reviews"><h3 class="nav-text">Reviews</h3></a>
+            <a class="nav-item nav-link" href="#offer"><h3 class="nav-text">Offers</h3></a>
+            <a class="nav-item nav-link" href="#contact"><h3 class="nav-text">Contact Us</h3></a>
           </div>
-          <button class="sched-btn"> Schedule Appt</button>
+          <button class="sched-btn"  data-toggle="modal" data-target="#form"> Schedule Appt</button>
         </div>
       </nav>
   <!--End Of Navbar-->
+
+<div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+    <div class="modal-header border-bottom-0">
+      <h5 class="modal-title" id="exampleModalLabel">Schedule Appointment</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <form>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="email1">Email address</label>
+          <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+        <div class="form-group">
+          <label for="password1">Phone Number</label>
+          <input type="number" class="form-control" id="password1" placeholder="Enter Your Phone#">
+        </div>
+        <div class="form-group">
+          <label for="date">Select Date</label>
+          <input type="date" class="form-control" id="date" >
+        </div>
+        <div class="form-group">
+            <label for="time" >Select Time</label>
+            <input type="time" class="form-control" id="time" >
+          </div>
+      </div>
+      <div class="modal-footer border-top-0 d-flex justify-content-center">
+        <button type="button" class="mdl-btn" data-dismiss="modal"  data-toggle="modal" data-target="#modal-container">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+
+
+<!--End Of Modal-->
+
+
 
 <!--Start Of Carousel-->
 <section class="hero">
@@ -85,16 +126,16 @@
                 </div>
         <div class ="container text-center my-icons">
             <div class="row">
-                <div class="col-md-4 mx-auto ">
+                <div class="col-sm-4 mx-auto ">
                     <i class="material-symbols-outlined icons" > build_circle </i>
                   <h2 class="svc-item">Installation Experts</h2>
                 </div>
-                <div class="col-md-4 mx-auto ">
+                <div class="col-sm-4 mx-auto ">
                 <i class="material-symbols-outlined icons">support_agent</i>
                 <h2 class="svc-item">24/7 Customer Support</h2>
             </div>
 
-            <div class="col-md-4 mx-auto ">
+            <div class="col-sm-4 mx-auto ">
                 <i class="material-symbols-outlined icons">paid</i>
                 <h2 class="svc-item">Affordable Prices</h2>
             </div>
@@ -104,45 +145,45 @@
 
 <div class="container-lg">
     <div class="row gy-4">
-        <div class ="col-lg-3">
+        <div class ="col-lg-3 col-md-6">
             <div class="card" >
-                <img class="card-img-top" src="/images/elec.png" alt="Card image cap">
+                <img class="card-img-top img-responsive" src="/images/elec.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Electronics</h5>
-                  <p class="card-text">Stero, audio, electronics & more!</p>
-                 <a href="#" class="svc-link"><button class="svc-btn">Get Quote</button></a>
+                  <h5 class="card-title">Stereo</h5>
+                  <p class="card-text">Stereo, audio, electronics & more!</p>
+                 <a href="#" class="svc-link"><button class="svc-btn" data-toggle="modal" data-target="#form">Get Quote</button></a>
                 </div>
             </div>
         </div>
 
-        <div class ="col-lg-3">
+        <div class ="col-lg-3 col-md-6">
             <div class="card" >
-                <img class="card-img-top" src="/images/tires.png" alt="Card image cap">
+                <img class="card-img-top img-responsive" src="/images/tires.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title"> Wheels</h5>
                   <p class="card-text">Tires, covers, rims, and more!</p>
-                  <a href="#" class="svc-link"><button class="svc-btn">Get Quote</button></a>
+                  <a href="#" class="svc-link"><button class="svc-btn" data-toggle="modal" data-target="#form">Get Quote</button></a>
                 </div>
             </div>
         </div>
 
-        <div class ="col-lg-3">
+        <div class ="col-lg-3 col-md-6">
             <div class="card" >
-                <img class="card-img-top" src="images/kits.png" alt="Card image cap">
+                <img class="card-img-top img-responsive" src="images/kits.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Lift Kits</h5>
-                  <p class="card-text">Lift kits, spacers, sway bars & more!.</p>
-                  <a href="#" class="svc-link"><button class="svc-btn">Get Quote</button></a>
+                  <p class="card-text">Lift kits, spacers, sway bars & more!</p>
+                  <a href="#" class="svc-link"><button class="svc-btn" data-toggle="modal" data-target="#form">Get Quote</button></a>
                 </div>
             </div>
         </div>
-        <div class ="col-lg-3">
+        <div class ="col-lg-3 col-md-6">
             <div class="card" >
-                <img class="card-img-top" src="/images/acc.png" alt="Card image cap">
+                <img class="card-img-top img-responsive" src="/images/acc.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Mods</h5>
                   <p class="card-text">Fenders, lights, grills, & more!</p>
-                  <a href="#" class="svc-link"><button class="svc-btn">Get Quote</button></a>
+                  <a href="#" class="svc-link"><button class="svc-btn" data-toggle="modal" data-target="#form">Get Quote</button></a>
                 </div>
             </div>
         </div>
@@ -247,36 +288,36 @@
     <div class="gall-hdr">Testimonials</div>
 
     <div class="testimonials">
-        <div class="container-fluid">
+        <div class="container">
           
             <div class="home-testimonial-bottom">
                 <div class="container testimonial-inner">
                     <div class="row d-flex justify-content-center">
-                        <div class="col-md-4 style-3">
+                        <div class="col-sm-4 style-3">
                             <div class="rev-item ">
                                 <div class="rev-desc bg-white">
-                                    <div class="rev-text color-grey-3 text-center">&ldquo;Fire!! They have a customer for life!&rdquo;</div>
-                                    <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="images/Review1.jpg" alt="" width="250rem"></div>
+                                    <div class="rev-text color-grey-3 text-center">&ldquo; Customer for life!&rdquo;</div>
+                                    <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="images/review(3).png" alt="" width="250rem"></div>
                                     <div class="link-name d-flex justify-content-center">Kane Williams</div>
                                     <div class="link-position d-flex justify-content-center">Miami</div>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="col-md-4 style-3">
+                        <div class="col-sm-4 style-3">
                             <div class="rev-item ">
                                 <div class="rev-desc bg-white">
-                                    <div class="rev-text color-grey-3 text-center">&ldquo;Everyone loves my new beast...except for the trails ;)&rdquo;</div>
-                                    <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="images/review 4.jpg" alt="" width="250rem"></div>
+                                    <div class="rev-text color-grey-3 text-center">&ldquo;I Love my JP kit.&rdquo;</div>
+                                    <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="images/review(4).png" alt="" width="250rem"></div>
                                     <div class="link-name d-flex justify-content-center">Bobby Diltz</div>
                                     <div class="link-position d-flex justify-content-center">Boulder</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 style-3">
+                        <div class="col-sm-4 style-3">
                             <div class="rev-item ">
                                 <div class="rev-desc bg-white">
-                                    <div class="rev-text color-grey-3 text-center">&ldquo;I officially have the coolest mall crawler in the city!&rdquo;</div>
+                                    <div class="rev-text color-grey-3 text-center">&ldquo;Affordable & Fast.&rdquo;</div>
                                     <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="images/Review3.jpg" alt=""></div>
                                     <div class="link-name d-flex justify-content-center">Dante Moore</div>
                                     <div class="link-position d-flex justify-content-center">Dallas</div>
@@ -296,7 +337,7 @@
   
 
         <div class = "form-cntr">
-            <h2 class="offer-text">Get 25% Off Your Next Modification Just By Signing Up To Our Mailing List!</h2>
+            <h2 class="offer-text">Get 25% Off Your Next Modification Just For Joining Our Mailing List!</h2>
         <form class = "col-lg-12   my-form" >
             <div class="row justify-content-center">
                        <div class="form-group">
@@ -321,7 +362,7 @@
     <div class="row">
         <div class = "col-lg-3 mx-auto">
             <span class="material-symbols-outlined icons">schedule</span>
-            <h3 class="svc-item">Hours: 9:00am - 5:00pm (Sun - Sat)</h3>
+            <h3 class="svc-item">Hours: 9:00am - 5:00pm<br> (Sun - Sat)</h3>
         </div>
         <div class = "col-lg-3 mx-auto">
             <span class="material-symbols-outlined icons">call</span>
